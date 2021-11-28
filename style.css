@@ -1,0 +1,17 @@
+body
+{
+    background-color: lawngreen;
+}
+
+#webcam , #snapshot
+{
+    border: 2px dashed brown;
+    height: 350px;
+    width: 350px;
+}
+
+.take_snap
+{
+    color: darkgreen;
+    font-weight: bold;
+}

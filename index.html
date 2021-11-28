@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title></title>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></link>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css"  href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+        <script src=" https://unpkg.com/ml5@0.4.3/dist/ml5.min.js "></script>
+    </head>
+    <body>
+        <div id="container">
+            <center>
+
+                <h1> FACE RECOGNITION WEB APP </h1>
+                <br>
+                <br>
+                <label> Model is trained to do face recognition </label>
+                <br>
+                <button class="btn btn-warning"> Father </button>
+                <button class="btn btn-danger"> Mother </button>
+                <button class="btn btn-info"> Brother </button>
+                <button class="btn btn-success"> Myself </button>
+                <br>
+                <br>
+                <div class="webcam_container">
+                    <label> Webcam View : </label>
+                    <div id="webcam"></div>
+                    <button class="btn btn-secondary take_snap" onclick="take_snap();"> TAKE SNAPSHOT </button>
+                </div>
+                <div>
+                    <label></label>
+                    <p> Identified : <span id="result_name"></span></p>
+                    <p> Accuracy : <span id="result_accuracy"></span></p>
+                </div>
+                <div class="snapshot_container">
+                    <label> Snapshot : </label>
+                    <div id="snapshot"></div>
+                    <button class="btn btn-secondary identify_IMG" onclick="identify_image();"> IDENTIFY IMAGE </button>
+                </div>
+            </center>
+        </div>
+    </body>
+</html>
